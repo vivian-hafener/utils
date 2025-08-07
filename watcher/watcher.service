@@ -1,0 +1,10 @@
+[Unit]
+Description=Trigger action on directory change
+StartLimitIntervalSec=60
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/watcher.sh
+
+[Install]
+WantedBy=multi-user.target

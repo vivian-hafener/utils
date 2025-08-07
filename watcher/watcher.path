@@ -1,0 +1,9 @@
+[Unit]
+Description=Trigger action on directory change
+
+[Path]
+PathChanged=/home/vhafener/repos/slinky-dev/slurm-operator/helm/slurm/values.yaml
+Unit=watcher.service
+
+[Install]
+WantedBy=multi-user.target
